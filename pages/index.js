@@ -349,45 +349,47 @@ export default function Home() {
           <h3 className="section-title">المسارات الأربعة وشروطها (للطالب الجزائري)</h3>
           <p>حدّد مسارك من الجدول التالي — <strong>السن يُحسب في تاريخ فتح التسجيل 20 أغسطس 2026:</strong></p>
 
-          <table className="tracks-table">
-            <thead>
-              <tr>
-                <th>الشرط</th>
-                <th>Bachelor's (ليسانس)</th>
-                <th>Master's (ماستر)</th>
-                <th>Doctoral (دكتوراه)</th>
-                <th>Postdoctoral</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="row-head">السن المطلوب</td>
-                <td>16–23 سنة</td>
-                <td>20–33 سنة</td>
-                <td>22–35 سنة</td>
-                <td>24–39 سنة</td>
-              </tr>
-              <tr>
-                <td className="row-head">المؤهل المطلوب</td>
-                <td>شهادة البكالوريا (أو في طور الحصول عليها)</td>
-                <td>شهادة ليسانس (أو في سنة التخرج)</td>
-                <td>شهادة ماستر / مهندس (أو في سنة التخرج)</td>
-                <td>شهادة دكتوراه مُكتملة</td>
-              </tr>
-              <tr>
-                <td className="row-head">عدد المراحل</td>
-                <td>مرحلتان (2)</td>
-                <td>مرحلتان (2)</td>
-                <td>3 مراحل</td>
-                <td>3 مراحل (بحثية)</td>
-              </tr>
-              <tr>
-                <td className="row-head">الجائزة</td>
-                <td colspan="3">مقعد دراسي ممول بالكامل ضمن الحصة الحكومية الروسية</td>
-                <td>موقع بحثي ممول — ليس مقعداً دراسياً</td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="overflow-x-auto max-w-full my-4 rounded-xl border border-[#1e3a56]">
+            <table className="tracks-table">
+              <thead>
+                <tr>
+                  <th>الشرط</th>
+                  <th>Bachelor's (ليسانس)</th>
+                  <th>Master's (ماستر)</th>
+                  <th>Doctoral (دكتوراه)</th>
+                  <th>Postdoctoral</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="row-head">السن المطلوب</td>
+                  <td>16–23 سنة</td>
+                  <td>20–33 سنة</td>
+                  <td>22–35 سنة</td>
+                  <td>24–39 سنة</td>
+                </tr>
+                <tr>
+                  <td className="row-head">المؤهل المطلوب</td>
+                  <td>شهادة البكالوريا (أو في طور الحصول عليها)</td>
+                  <td>شهادة ليسانس (أو في سنة التخرج)</td>
+                  <td>شهادة ماستر / مهندس (أو في سنة التخرج)</td>
+                  <td>شهادة دكتوراه مُكتملة</td>
+                </tr>
+                <tr>
+                  <td className="row-head">عدد المراحل</td>
+                  <td>مرحلتان (2)</td>
+                  <td>مرحلتان (2)</td>
+                  <td>3 مراحل</td>
+                  <td>3 مراحل (بحثية)</td>
+                </tr>
+                <tr>
+                  <td className="row-head">الجائزة</td>
+                  <td colSpan="3">مقعد دراسي ممول بالكامل ضمن الحصة الحكومية الروسية</td>
+                  <td>موقع بحثي ممول — ليس مقعداً دراسياً</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
           <div className="card card-experience">
             <div className="card-badge">من تجربتنا — EXPERIENCE</div>
@@ -794,12 +796,12 @@ export default function Home() {
               <div className="ph-cell">Status</div>
             </div>
             <div className="portfolio-row">
-              <div className="pr-cell subject">Applied Mathematics<br />Master's</div>
-              <div className="pr-cell highlight">Not filled in<br />Add</div>
-              <div className="pr-cell highlight">Not filled in<br />Add</div>
-              <div className="pr-cell highlight">Not passed<br />Get tested</div>
-              <div className="pr-cell gold">Add achievement</div>
-              <div className="pr-cell highlight text-[10px]">Not ready to be sent for verification</div>
+              <div className="pr-cell subject" data-label="Subject area, track">Applied Mathematics<br />Master's</div>
+              <div className="pr-cell highlight" data-label="Education documents">Not filled in<br />Add</div>
+              <div className="pr-cell highlight" data-label="Motivation letter">Not filled in<br />Add</div>
+              <div className="pr-cell highlight" data-label="Entry test">Not passed<br />Get tested</div>
+              <div className="pr-cell gold" data-label="Score">Add achievement</div>
+              <div className="pr-cell highlight text-[10px]" data-label="Status">Not ready to be sent for verification</div>
             </div>
           </div>
 
