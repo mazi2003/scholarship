@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import FloatingWhatsApp from '../components/FloatingWhatsApp';
 import '../styles/globals.css';
 
 export default function App({ Component, pageProps }) {
@@ -10,6 +11,7 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </div>
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }

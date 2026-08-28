@@ -6,24 +6,30 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Open Doors official colors
-        primary:  "#0D9BD8",   // أزرق Open Doors الرئيسي
-        pink:     "#E42F80",   // وردي Open Doors الثانوي
-        dark:     "#2D2D37",   // لون النص الداكن
-        light:    "#F7F7F7",   // خلفية فاتحة
-        white:    "#FFFFFF",
-        // keep aliases for compatibility
-        teal:     "#0D9BD8",
-        navy:     "#1A1A2E",
-        gold:     "#E42F80",
-        muted:    "#555555",
+        navy: {
+          DEFAULT: "#0d1b2a",
+          mid: "#112236",
+          light: "#1a3252",
+          dark: "#080f18",
+        },
+        gold: {
+          DEFAULT: "#c9a84c",
+          light: "#e6c76b",
+          pale: "#f5e8c0",
+        },
+        primary: "#c9a84c",
+        teal: "#c9a84c",
+        dark: "#0d1b2a",
+        card: "#112236",
+        border: "#1e3a56",
       },
       fontFamily: {
-        body:    ["Tajawal", "sans-serif"],
+        body: ["Tajawal", "sans-serif"],
         heading: ["Tajawal", "sans-serif"],
       },
       boxShadow: {
-        card: "0 4px 24px rgba(0,0,0,0.08)",
+        card: "0 4px 24px rgba(0,0,0,0.35)",
+        gold: "0 0 15px rgba(201,168,76,0.25)",
       },
     },
   },
